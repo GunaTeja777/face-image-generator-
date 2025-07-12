@@ -129,6 +129,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Weights & Biases (wandb)
+wandb/
+*.wandb
+
 # Face/Image generation specific
 *.jpg
 *.jpeg
