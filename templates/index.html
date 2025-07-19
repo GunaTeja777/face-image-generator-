@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Generator</title>
+    <style>
+        body { text-align: center; font-family: sans-serif; }
+        img { border: 1px solid #ccc; margin-top: 20px; width: 256px; height: 256px; }
+    </style>
+</head>
+<body>
+    <h1>AI Face Generator</h1>
+    <button onclick="generate()">Generate Face</button>
+    <br>
+    <img id="result" src="" alt="Generated Face"/>
+    <script>
+        async function generate() {
+            const res = await fetch('/generate');
+            const data = await res.json();
+            document.getElementById('result').src = 'data:image/png;base64,' + data.image;
+        }
+    </script>
+</body>
+</html>
