@@ -27,4 +27,35 @@ Users can click a button on the website to generate new AI-generated faces insta
 ---
 
 ## 📁 Project Structure
+## 📁 Project Structure
+
+face-image-generator/
+├── app.py # Flask backend
+├── generator.py # Model loading and image generation
+├── model.py # Generator class definition
+├── checkpoints/ # Trained model checkpoints
+│ └── G-latest.pkl
+├── templates/
+│ └── index.html # Web UI
+├── static/
+│ └── style.css # Optional styling
+├── requirements.txt # Python dependencies
+└── README.md # You're here!
+
+
+---
+
+## 🔧 How to Run Locally
+
+1. **Clone this repo**
+## bash
+git clone https://github.com/yourusername/face-image-generator.git
+cd face-image-generator
+## Install requirements
+pip install -r requirements.txt
+## Run the app
+python app.py
+
+http://localhost:5000
+
 
