@@ -187,6 +187,23 @@
             box-shadow: 0 8px 25px rgba(17, 153, 142, 0.4);
         }
 
+        .credits {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .credits strong {
+            color: #ff6b6b;
+            font-weight: 600;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
         .loading {
             display: none;
             margin: 20px 0;
@@ -273,6 +290,10 @@
         <button class="download-btn" onclick="downloadImage()" id="downloadBtn">
             📥 Download Image
         </button>
+        
+        <div class="credits">
+            <p>Made by <strong>Guna Teja</strong></p>
+        </div>
     </div>
 
     <script>
