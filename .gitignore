@@ -145,10 +145,10 @@ generated_faces/
 output/
 results/
 models/
-checkpoints/
-*.pkl
-*.pth
-*.pt
+# checkpoints/ - commented out to allow pushing checkpoints
+# *.pkl - commented out to allow pushing checkpoint files
+# *.pth - commented out to allow pushing checkpoint files
+# *.pt - commented out to allow pushing checkpoint files
 *.h5
 *.hdf5
 
